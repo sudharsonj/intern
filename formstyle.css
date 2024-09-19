@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -13,13 +13,20 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.contact{
+.contact {
     color: white;
     width: 50%;
 }
 
+#link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    width: 100%;
+}
+
 .contact h2 {
-    font-size:32px;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
@@ -28,25 +35,26 @@ body{
     margin-bottom: 20px;
 }
 
-.contact>a {
+.contact > a {
     color: white;
     display: block;
     margin-bottom: 10px;
     text-decoration: none;
 }
 
-.contact>i {
+.contact > i {
     margin-right: 10px;
 }
 
 .form-container {
     background-color: white;
-    padding: 30px;
+    padding: 20px;
     width: 40%;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
-.form-container>h3 {
+.form-container > h3 {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -90,4 +98,35 @@ body{
 
 .btn:hover {
     background-color: #ff5656;
+}
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        padding-bottom: 50px;
+        height: auto; 
+    }
+
+    .contact > p {
+        display: none;
+    }
+    #link {
+        grid-template-columns: 1fr;
+        width: 300px;
+    }
+    .form-container {
+        margin-top: 10px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .input{
+        width: 92%;
+    }
 }
