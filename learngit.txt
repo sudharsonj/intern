@@ -1,0 +1,42 @@
+1.git is version control System.
+  version control System ()
+2.Git helps to keep track on code change.
+3.Git used to collabrate on code.
+  (multiple people can work on code)
+4.Git is intalled locally on your computer.
+  4.1 install git in your computer.
+  4.2 Then open cmd and set your username using(git congig --global user.name "ex:sudharson")
+  4.2 Then set your email using (git config --global user.email "ex:J.sudharson@hotmail.com")
+5.Github is a cloud-based service that runs git.
+6.Github hava alternative that runs git.
+   6.1.Bitbucket
+   6.2.Gitbucket
+7.Git also has its alternative.
+8.create a Github account in github.com
+9.create a new repository in github(ex:example).
+10.create new file (ex:new.txt)
+11.add some content to (new.txt)
+12.Then commit change and add commit message(ex:new file created)
+13.create a folder (ex:github)
+14.open visual studio code and open the folder you have created.
+15.Then to bring the repository (example) which is created in github in vscode we use (ex :git clone https://github.com/sudharsonj/intern.git)
+16.The link is copied from the github code option.
+17.Then we change the directory from github to example usign (cd example).
+18.Now we can see the file (new.txt) we created in the github in vs code.
+19.Now we creating a new file (new2.txt) in vs code.
+20.As soon as we create a new file (new2.txt) that shows "U" which represents that file is untracked.
+21.To change the created file from untracked to Staging we use (git add new2.txt) now "U" changed to "A"
+22.Then we commit the created a file using (git commit -m "commit msg to be displayed is written here").
+23.After we commit the folder we need to push the created file (new2.txt) to repository in github.
+24.To push we need to know the origin branch where we need to push the created file.
+25.To know what is the branch name we use (git branch).
+   25.1 When we have multiple branch and we need to view the branch list use(git branch -a).
+   25.2 To change branch name we use (git branch -m branchname).
+   25.3 To move from one branch to another we use (git checkout branchname).
+   25.6 To merge from one branch to another we use (git merge branchname).
+26.After knowing the branch name we use (ex:git push origin master).
+27.Now the created file(new2.txt) is added to the github repository you can view the (new2.txt) is repository.
+28.When we add some change in already pushed file in vscode it changes to "M" which means that the file is Modified.
+29.After adding the changes we follow the same steps (Add,Commit,Push) then the modification can also be viewed in repository.
+30.when we create a new file(new3.txt) in repository we use (git.pull)in vscode terminal to view the created file in vscode.
+   30.1 git pull is used to update the changes made in repository.
