@@ -7,7 +7,118 @@ body {
     margin: 0;
     padding: 0;
 }
+.form-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 80%;
+    margin: 0px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.container.dark .form-container{
+    background-color: rgba(251, 245, 245,1);
+    color: black;    
+}
+.container.dark .form-container h3{
+    border-bottom: 1px solid black;
+}
+.container.dark .cont1{
+    background-color: black;
+}
+.container.dark .contact h2{
+    color:white;
+}
+.container.dark .contact p{
+    color:white;
+}
+.container.dark .contact a{
+    color:white;
+}
+.form-container > h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.input {
+    margin-bottom: 20px;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input input, .input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input input:focus, .input textarea:focus {
+    outline: none;
+    border-color: #ff7f7f;
+}
+
+.input textarea {
+    resize: none;
+    height: 100px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background-color: #ff7f7f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #ff5656;
+}
+.container.dark{
+    background-color: black;
+    color: white;
+}
+.hero{
+    height: 18vh;
+    width: 100%;
+    background: var(--primary-color);
+    font-family: sans-serif;
+    position: relative;
+}
+nav{
+    width: 75%;
+    margin: 10px;
+    position: relative;
+    left: 130px;
+    padding: 5px 0;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff7f7f;
+    border-radius: 40px;
+    position: fixed;
+}
+nav>ul>li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+}
+#icon{
+    width: 20px;
+    cursor: pointer;
+    position: relative;
+    right: 300px;
+}
 .info {
     display: flex;
     justify-content: space-between;
@@ -19,9 +130,13 @@ body {
 .address>p{
     margin: 5px;
 }
-a{
+nav>ul>li>a{
     text-decoration: none;
     color: black;
+}
+a{
+    text-decoration: none;
+    color: blue;
 }
 .header{
     
@@ -96,8 +211,14 @@ a{
     border-bottom: 1px bold black;
 }
 h3{
-    color: rgb(38, 38, 143);
+    color: #d43636;
     border-bottom: 1px solid black;
+}
+.container.dark h3 {
+    border-bottom: 1px solid white;
+}
+.input{
+    width: 92%;
 }
 #date{
     display: flex;
@@ -116,7 +237,7 @@ h3{
     font-weight: bold;
 }
 h1{
-    color: rgb(38, 38, 143);
+    color: #d43636;
 }
 .project-wrap{
     display: grid;
@@ -127,6 +248,54 @@ h1{
     font-weight: bold;
     font-size: 18px;
 }
+.btn {
+    font-size: 14px;
+    padding: 8px;
+    height: 50px;
+    width: 93.5%;
+}
+.contact {
+    color: white;
+    width: 50%;
+}
+
+#link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    width: 100%;
+}
+
+.contact h2 {
+    color:black;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact > a {
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.contact > i {
+    margin-right: 10px;
+}
+.cont1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 50px;
+    background-color: white;
+}
 @media (max-width:480px){
     .header{
         display: flex;
@@ -134,6 +303,8 @@ h1{
         justify-content: space-between;
         flex-direction: column;
         margin-right: 155px;
+        margin-top: 0;
+        padding-top: 60px;    
     }
     .container{
         padding-left: 8px;
@@ -148,5 +319,60 @@ h1{
         flex-direction: column;
         align-items: flex-start;
     }
+    .form-container {
+        position: relative;
+        top:px;
+        margin-top: 10px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .input{
+        width: 92%;
+    }
+    .cont1 {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        padding-bottom: 50px;
+        height: auto; 
+    }
+    .contact{
+        position: relative;
+        top:-10px;
+    }
+    .contact > p {
+        display: none;
+    }
+    #link {
+        grid-template-columns: 1fr;
+        width: 300px;
+    }
+        nav {
+            width: 100%; /* Make nav full width on mobile */
+            left: 0; /* Remove the left offset */
+            margin: 10px auto; /* Center the nav */
+            border-radius: 40px; /* Keep the rounded corners */
+        }
     
-}
+        nav ul {
+            width: 100%; /* Full width for ul on mobile */
+            justify-content: space-evenly; /* Spread items evenly on mobile */
+        }
+    
+        nav ul li {
+            margin: 5px 10px; /* Adjust margin slightly for smaller screens */
+        }
+    
+        #icon {
+            position: relative;
+            right: 50px; /* Keep the icon at its original position */
+            margin: 0; /* Reset any extra margin */
+        }
+    }
+
