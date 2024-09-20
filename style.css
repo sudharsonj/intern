@@ -354,25 +354,25 @@ h1{
         width: 300px;
     }
         nav {
-            width: 100%; /* Make nav full width on mobile */
-            left: 0; /* Remove the left offset */
-            margin: 10px auto; /* Center the nav */
-            border-radius: 40px; /* Keep the rounded corners */
+            width: 100%; 
+            left: 0; 
+            margin: 10px auto; 
+            border-radius: 40px; 
         }
     
         nav ul {
-            width: 100%; /* Full width for ul on mobile */
-            justify-content: space-evenly; /* Spread items evenly on mobile */
+            width: 100%; 
+            justify-content: space-evenly; 
         }
     
         nav ul li {
-            margin: 5px 10px; /* Adjust margin slightly for smaller screens */
+            margin: 5px 10px; 
         }
     
         #icon {
             position: relative;
-            right: 50px; /* Keep the icon at its original position */
-            margin: 0; /* Reset any extra margin */
+            right: 50px; 
+            margin: 0; 
         }
     }
 
