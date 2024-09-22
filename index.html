@@ -3,171 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>portfolio website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
     <div class="hero">
         <nav>
             <img src="" alt="">
             <ul>
-                <li><a href="">Home</a></li>
+                <li><a href="#inf">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Project</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#cont">Contact</a></li>
             </ul>
             <img src="moon.png" id="icon">
         </nav>
-    </div>
-    <div class="main">
-    <div class="header">
-            <div class="name">
-                <h1>SUDHARSON J</h1>
-                <p><i class="fa-solid fa-location-dot"></i> Madurai, Tamil Nadu</p>
-                
+        <div class="info" id="inf">
+            <div class="details">
+                <h1>I'm <span>Sudharson</span></h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet aliquid repellat eum enim,<br> minima possimus reprehenderit officiis.</p>
+                <a href="">Download CV</a>
             </div>
-                <div class="info">
-                    <div class="address">
-                        <p><i class="fa-solid fa-phone"></i> 9025081986</p>
-                        <p><i class="fa-regular fa-calendar"></i> 13 Apr '02</p>
-                        <p><i class="fa-solid fa-envelope"></i> J.sudharson@hotmail.com</p>
-                        <p><i class="fa-brands fa-linkedin-in"></i> <a href="linkedin.com/in/sudharson-j-3348a7328">LinkedIn</a></p>
-                    </div>
-                </div>
         </div>
+        <div class="img-box">
+            <h1>WEB DEVELOPER</h1>
+            <img src="back1.jpg" class="back1">
+            <img src="back2.jpg" class="back2">
+            <img src="image - Copy.jpg" class="image">
+        </div>
+        <div class="container" id="cont">
+            <div class="contact">
+                <h2>Have Any Questions?</h2>
+                <p>Lorem ipsum is a dummy text used to replace text in some areas just for the purpose of an example. It can be used in publishing and graphic design.</p>
+                <div id="link" class="contact1">
+    
+                    <a href=""><i class="fas fa-phone"></i> +91 90250-81986</a>
+                    <a href=""><i class="fas fa-envelope"></i> J.sudharson@hotmail.com</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> Tamil nadu, Madurai-16</a>
+                </div>
+            </div>
+            <div class="form-container">
+                <form action="/submit" method="post">
+                    <h3>Contact Us</h3>
+                    <div class="input">
+                        <label for="name">Enter Your Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">Enter Your Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="message">Enter Your Message *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
         
-            <div class="objective">
-                <h3>OBJECTIVE</h3>
-                <P>I am an MCA student seeking a job where I can leverage my skills and achieve my career aspirations. With a strong foundation
-                    in web development languages and a commitment to dedication and hard work, I am eager to contribute to a dynamic team and
-                    grow professionally.  </P>
+                    <button type="submit" class="btn">Send Us ➔</button>
+                </form>
             </div>
-            <div class="education">
-                <h3>EDUCATION</h3>
-                <div class="pg">
-                    <div class="wrap">
-
-                        <p id="title">Master of Computer Application</p>
-                        <p id="title">2023 - Present</p>
-                    </div>
-                    <div class="wrap">
-                    <p>Madurai Kamaraj University</p>
-                    <p id="title">7/10 CGPA</p>
-                    </div>
-                </div>
-                <div class="pg">
-                    <div class="wrap">
-
-                        <p id="title">Bachelor of science, Information Technology</p>
-                        <p id="title">2020 - 2023</p>
-                    </div>
-                    <div class="wrap">
-                        <p>The American College</p>
-                    <p id="title">7.5/10 CGPA</p>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <h3>PROJECTS</h3>
-                <div class="freshcart">
-                    <div class="project-wrap">
-
-                        <p>Fresh cart - UI design</p>
-                        <div class="date">
-                            <p id="title">May 2024 - Jun 2024</p>
-                        </div>
-                    </div>
-                <li>Design a simple and intuitive navigation system that allows users to easily explore product categories, apply qlters, and search
-                    for speciqc grocery items, ensuring a smooth browsing experience.</li>
-                <li>Develop a quick and hasslezfree checkout experience with minimal steps, offering clear options for payment and delivery to
-                    reduce cart abandonment and enhance user satisfaction.</li>
-                <li>Incorporate personalized features such as shopping history, favorite items, and tailored product recommendations to enhance
-                    user engagement and provide a more customized shopping experience.</li>
-                </div>
-                <div class="freshcart">
-                    <div class="project-wrap">
-
-                        <p>Paint shop inventory management system</p>
-                        <div class="date">
-                            <p id="title">Jan 2023 - Apr 2023</p>
-                        </div>
-                    </div>
-                <li>This project develops a webzbased inventory system using HTML, CSS, and MySQL for a paint shop.</li>
-                <li>Simple and intuitive interface for managing inventory.</li>
-                <li>MySQL for realztime stock tracking and reporting.</li>
-                <li>Ensures accurate stock control and minimizes discrepancies.</li>
-                </div>
-             </div>
-             <div class="intern">
-                <h3>INTERNSHIP</h3>
-                <div id="date">
-                    <p>UI/UX intern, Internship Studio, Maharastra</p>
-                    <p id="title">May 2024 - Jun 2023</p>
-                </div>
-             </div>
-             <div class="certificate">
-                <h3>CERTIFICATION</h3>
-                <div class="wrap">
-                <div class="UI">
-                    <p id="title">UI/UX Designer</p>
-                    <p>Internship Studio</p>
-                </div>
-                <p id="title">Jun 2024</p>
-            </div>
-            <div class="wrap">
-                <div class="UI">
-                    <p id="title">Full stack development</p>
-                    <p>Shikshaa</p>
-                    
-                </div>
-                <p id="title">Mar 2024</p>
-            </div>
-        </div>
-             <div class="skill">
-                <h3>Skills</h3>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Mongodb</li>
-                <li>Figma</li>
-             </div><div class="cont1">
-
-                 <div class="contact">
-                    <h2>Have Any Questions?</h2>
-                    <p>Lorem ipsum is a dummy text used to replace text in some areas just for the purpose of an example. It can be used in publishing and graphic design.</p>
-                    <div id="link" class="contact">
-        
-                        <a href=""><i class="fas fa-phone"></i> +91 90250-81986</a>
-                        <a href=""><i class="fas fa-envelope"></i> J.sudharson@hotmail.com</a>
-                        <a href="#"><i class="fas fa-map-marker-alt"></i> Tamil nadu, Madurai-16</a>
-                    </div>
-                </div>
-               <div class="form-container">
-                    <form action="/submit" method="post">
-                        <h3>Contact Us</h3>
-                        <div class="input">
-                            <label for="name">Enter Your Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="input">
-                            <label for="email">Enter Your Email *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="input">
-                            <label for="message">Enter Your Message *</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-            
-                        <button type="submit" class="btn">Send Us ➔</button>
-                    </form>
-                </div>
-             </div>
+        </div>    
     </div>
-        </div>
-<script src="script.js"></script>
+<script src="formscrpit.js"></script>
 </body>
 </html>
