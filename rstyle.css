@@ -318,10 +318,29 @@ h1{
     .container{
         padding-left: 8px;
     }
-    #date{
+    .main{
+        margin-top: -90px;
+    }
+    .freshcart .project-wrap{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .project-wrap .date > p{
+        position: relative;
+        top: 25px;
+    right: 120px;
+    }
+     #titles{
+        position: relative;
+        top: 45px;
+    right: 130px;
+    font-weight: bold;
+    }
+    .intern #title{
+        position: relative;
+        left: 40px;
     }
     .wrap{
         display: flex;

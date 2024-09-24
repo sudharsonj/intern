@@ -7,6 +7,7 @@ var contact1 = document.querySelector(".contact1");
 var image = document.querySelector(".image");
 var back1 = document.querySelector(".back1");
 var back2 = document.querySelector(".back2");
+var h1 = document.querySelector("h1");
 
 icon.onclick = function(){
     hero.classList.toggle("darktheme");
@@ -14,6 +15,7 @@ icon.onclick = function(){
     contatct.classList.toggle("darktheme")
     formcontainer.classList.toggle("darktheme")
     contact1.classList.toggle("darktheme")
+    h1.classList.toggle("darktheme")
     if(hero.classList.contains("darktheme")){
         icon.src = "sun1.png";
     }else{

@@ -27,6 +27,9 @@ body{
     font-family: sans-serif;
     position: relative;
     padding-bottom: 100px;
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove extra margin */
+    width: 100%; /* Make sure it covers the full width */
 }
 nav{
     width: 100%;
@@ -91,7 +94,7 @@ span{
     border-radius: 5px;
 }
 .hero ul li a{
-    background-color: #ff7f7f;
+    /* background-color: #ff7f7f; */
     color: #000106;
     padding: 8px;
     border-radius: 10px;
@@ -141,12 +144,16 @@ nav>ul{
 }
 .img-box h1{
     position: absolute;
-    bottom: 530px;
+    bottom: 460px;
     right: 60px;
     text-align: center;
     color: #d43636;
     font-size: 45px;
     font-family: poppins;
+}
+.darktheme.img-box h1{
+    color: #d43636;
+    background: #000106;
 }
 .container {
     display: flex;
@@ -209,10 +216,14 @@ nav>ul{
     border-radius: 10px;
     box-sizing: border-box;
 }
-
-.form-container > h3 {
-    text-align: center;
-    margin-bottom: 20px;
+.form-container .input label{
+    padding: 2px;
+    margin-top: 10px;
+}
+.form-container h3 {
+    position: relative;
+    left: 170px;
+    margin-bottom: 10px;
 }
 
 .input {
@@ -222,10 +233,11 @@ nav>ul{
 .input label {
     display: block;
     margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .input input, .input textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -243,7 +255,7 @@ nav>ul{
 
 .btn {
     display: block;
-    width: 100%;
+    width: 95%;
     background-color: #ff7f7f;
     color: white;
     padding: 10px;
@@ -254,4 +266,185 @@ nav>ul{
 
 .btn:hover {
     background-color: #ff5656;
+}
+@media screen and (max-width: 768px) {
+    .details {
+        left: 5%;
+        width: 90%; /* Ensure the details section takes most of the mobile screen */
+        text-align: center; /* Align text centrally for a better mobile view */
+    }
+
+    .details>h1 {
+        font-size: 40px; /* Smaller font size for better readability on mobile */
+    }
+
+    .details>a {
+        margin: 20px auto;
+        padding: 8px 16px; /* Slightly smaller button */
+    }
+
+    .image, .back1, .back2 {
+        width: 40%; /* Resize images for mobile screens */
+        height: auto;
+        right: 0; /* Center images for mobile */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .back1 {
+        bottom: 0;
+        right: 0;
+    }
+
+    .back2 {
+        bottom: 20px;
+        right: 0;
+    }
+
+    .img-box h1 {
+        position: relative;
+        bottom: 0;
+        font-size: 30px; /* Smaller font size for the title */
+        right: 0;
+    }
+}
+
+/* Very Small Mobile Styles (for screens smaller than 480px) */
+@media screen and (max-width: 480px) {
+  
+    .details>h1 {
+        font-size: 30px;
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    .img-box h1{
+        position: relative;
+        top: -170px;
+        left: 100px;
+    }
+    .hero {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        position: relative;
+        min-height: 100vh; 
+    }
+    .details>p {
+        font-size: 14px; /* Smaller text */
+        line-height: 18px;
+    }
+
+    .details>a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .image, .back1, .back2 {
+        width: 60%; /* Make images smaller for very small screens */
+    }
+
+    .img-box h1 {
+        font-size: 25px;
+    }
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        padding-bottom: 50px;
+        height: auto; 
+    }
+
+    .contact > p {
+        display: none;
+    }
+    .img-box {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .img-box > img {
+        max-width: 120px;  /* Further reduce image size on small screens */
+    }
+
+    .img-box .back1,
+    .img-box .back2 {
+        width: 180px;       /* Smaller size for backgrounds */
+        height: 180px;
+    }
+
+    .img-box .back1 {
+        left: 120px;     
+        top: 420px;  /* Adjust left background position for smaller screens */
+    }
+
+    .img-box .back2 {
+        position: relative;
+        top: -440px;
+        left: 250px;   /* Adjust right background position for smaller screens */
+    }   
+    .img-box .back1.animate{
+        transform: translateY(100px) translateX(-60px);
+    }
+    .img-box .back2.animate{
+    transform: translateY(-100px) translateX(-40px);
+    }
+    #link {
+        grid-template-columns: 1fr;
+        width: 300px;
+    }
+    .container{
+        padding-top: 60px;
+    }
+    .form-container {
+        margin-top: 10px;
+        width: 80%;
+        padding: 15px;
+        position: relative;
+        left: 5px;
+        opacity: 0.8;
+    }
+    .form-container h3{
+        position: relative;
+        left: 100px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+    /* nav {
+        background-color: transparent;
+        } */
+
+    .input{
+        width: 92%;
+    }
+    nav {
+        width: 85%; 
+        left: 0; 
+        margin: 10px auto; 
+        padding: 20px;
+    }
+
+    nav ul {
+        width: 100%; 
+        justify-content: space-evenly; 
+    }
+
+    nav ul li {
+        margin: 5px 10px; 
+        margin-right: 10px;
+    }
+
+    #icon {
+        position: relative;
+        right: 50px; 
+        margin: 0; 
+    }
 }
