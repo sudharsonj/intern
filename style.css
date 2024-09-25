@@ -252,7 +252,9 @@ nav>ul{
     resize: none;
     height: 100px;
 }
-
+span{
+    color: red;
+}
 .btn {
     display: block;
     width: 95%;
@@ -315,6 +317,9 @@ nav>ul{
     .details>h1 {
         font-size: 30px;
     }
+    .details{
+        margin-top: 80px;
+    }
     body, html {
         margin: 0;
         padding: 0;
@@ -350,6 +355,8 @@ nav>ul{
 
     .img-box h1 {
         font-size: 25px;
+        position: relative;
+        top: 30px;
     }
     .container {
         flex-direction: column;
@@ -386,7 +393,7 @@ nav>ul{
 
     .img-box .back2 {
         position: relative;
-        top: -440px;
+        top: -305px;
         left: 250px;   /* Adjust right background position for smaller screens */
     }   
     .img-box .back1.animate{
@@ -426,21 +433,29 @@ nav>ul{
         width: 92%;
     }
     nav {
-        width: 85%; 
-        left: 0; 
-        margin: 10px auto; 
-        padding: 20px;
+        padding: 15px; /* More padding for smaller screens */
+        position: fixed;
+        z-index: 99;
+        width: 100%;
     }
 
     nav ul {
-        width: 100%; 
-        justify-content: space-evenly; 
+        flex-wrap: nowrap; /* Ensure items stay on a single line */
+        justify-content: space-evenly; /* Space items evenly */
     }
 
     nav ul li {
+        margin: 0 3px; /* Reduce the margin further */
+    }
+
+    nav img {
+        width: 30px; /* Further reduce the logo size */
+    }
+
+    /*nav ul li {
         margin: 5px 10px; 
         margin-right: 10px;
-    }
+    }*/
 
     #icon {
         position: relative;

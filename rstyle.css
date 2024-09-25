@@ -305,6 +305,9 @@ h1{
     padding: 0 50px;
     background-color: white;
 }
+span{
+    color: red;
+}
 @media (max-width:480px){
     .header{
         display: flex;
