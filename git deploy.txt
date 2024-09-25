@@ -1,0 +1,18 @@
+1.Befor deploying you should have github account and repository in github.
+2.If not create a account in github and create a new repository.
+    2.1 set your name
+    2.2 set your email
+3.Then go to the editor (vscode) and use git init to initialize .git file in the folder.
+4.Then use 
+    4.1 git add .
+    4.2 git commit -m ""
+5.After commiting set the remote repository origin using
+    5.1 git remote add origin https://github.com/username/repositoryname.git
+6.After adding the origin push the file to respective branch name (ex: master/main)
+7.verify on github.
+8.Now to deploy in github if it's a static website you can host directly from github using github pages.
+    8.1 Go to repository's settings.
+    8.2 Scroll down to the github pages section.
+    8.3 under "source",select the branch (master/main) and click save.
+    8.4 github will provide you with a url where your site is hosted.
+
