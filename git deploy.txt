@@ -15,4 +15,3 @@
     8.2 Scroll down to the github pages section.
     8.3 under "source",select the branch (master/main) and click save.
     8.4 github will provide you with a url where your site is hosted.
-

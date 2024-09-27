@@ -1,15 +1,33 @@
 var icon =document.getElementById("icon");
-
-const container = document.querySelector(".container");
+var hero =document.querySelector(".hero");
+var contatct = document.querySelector(".contact");
+var formcontainer =document.querySelector(".form-container")
+var image = document.querySelector(".image");
+var back1 = document.querySelector(".back1");
+var back2 = document.querySelector(".back2");
+var h1 = document.querySelector("h1");
 
 icon.onclick = function(){
-    container.classList.toggle("dark");
-    if(container.classList.contains("dark")){
-        icon.src = "sun.png";
+    hero.classList.toggle("darktheme");
+    contatct.classList.toggle("darktheme")
+    formcontainer.classList.toggle("darktheme")
+    h1.classList.toggle("darktheme")
+    if(hero.classList.contains("darktheme")){
+        icon.src = "/sun.png";
+        
     }else{
-        icon.src = "moon.png";
+        icon.src ="/moon.png"
     }
 }
+image.addEventListener("mouseover",()=>{
+    back1.classList.add("animate");
+    back2.classList.add("animate");
+})
+image.addEventListener("mouseout",()=>{
+    back1.classList.remove("animate");
+    back2.classList.remove("animate");
+})
+
 
 function validation(){
     const Name = document.getElementById("name").value;
